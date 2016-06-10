@@ -1,0 +1,14 @@
+<h1> Question and Answer </h1>
+
+Get answers to your questions.  Get questions for your answers.
+
+<ul>
+  {{#each model as |question|}}
+
+     {{question-tile question=question}}
+  {{/each}}
+</ul>
+
+{{new-question save2="save3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
