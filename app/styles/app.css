@@ -1,0 +1,32 @@
+#title-shadow  {
+  /* Outside365 Copy: */
+  position: fixed;
+  top: 0;
+    left: 15;
+
+  font-family: Avenir-Book;
+  font-size: 70px;
+  color: #393839;
+  letter-spacing: 5.06px;
+  line-height: 35px
+   z-index: 10;
+}
+#title {
+  /* Outside365: */
+  position: relative;
+    top: 0;
+    left: 20;
+  font-family: Avenir-Book;
+  font-size: 50px;
+  color: #FFFFFF;
+  line-height: 35px;
+   z-index: 11;
+}
+#navbar {
+  /* Camp Site Forum: */
+font-family: HiraginoSans-W2;
+font-size: 20px;
+color: #A1BF81;
+letter-spacing: 0.68px;
+text-align: left
+}

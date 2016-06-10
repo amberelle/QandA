@@ -10,7 +10,7 @@ module.exports = function(environment) {
   },
     modulePrefix: 'q-and-a',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
