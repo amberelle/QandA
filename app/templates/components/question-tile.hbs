@@ -1,6 +1,6 @@
-<h4>Answers:</h4>
+<h3>Answers:</h3>
 <ul>
   {{#each question.answers as |answer|}}
-    <li>{{#link-to 'answer' answer.id}}{{answer.author}} has replied saying: {{answer.reply}}{{/link-to}}</li>
+    <li>{{#link-to 'answer' answer.id}}{{answer.author}} says: {{answer.response}}{{/link-to}}</li>
   {{/each}}
 </ul>
