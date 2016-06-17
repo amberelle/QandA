@@ -1,13 +1,19 @@
+<div class="container">
 {{outlet}}
 <h1> Question and Answer </h1>
 
 Get answers to your questions.  Get questions for your answers.
 
 <ul>
+
+
   {{#each model as |question|}}
 
-     {{question-tile question=question}}
+ <li>{{#link-to 'question' question.id}} {{question.author}}wants to know: {{question.ask}}{{/link-to}}</li>
+
+<!-- <li>{{question.author}} wants to know: {{question.ask}} </li> -->
   {{/each}}
 </ul>
 
 {{new-question save2="save3"}}
+</div>

@@ -1,2 +1,6 @@
-
-<li>{{question.author}} wants to know: {{question.ask}}</li>
+<h4>Answers:</h4>
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{#link-to 'answer' answer.id}}{{answer.author}} has replied saying: {{answer.reply}}{{/link-to}}</li>
+  {{/each}}
+</ul>
