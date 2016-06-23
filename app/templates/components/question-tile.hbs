@@ -1,5 +1,9 @@
 <h2>{{authorDateCompute}}</h2>
 <h5>{{question.ask}}</h5>
+
+<button {{action 'addToFavorite' question}}>Add to
+  Favorite List</button>
+
 <h3>Answers:</h3>
 <ul>
   {{#each question.answers as |answer|}}
