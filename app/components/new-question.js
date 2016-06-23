@@ -1,4 +1,5 @@
 import Ember from 'ember';
+// import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewQuestion: false,
@@ -15,6 +16,7 @@ export default Ember.Component.extend({
     var params = {
       author: this.get('author') === undefined ? "undefined" : this.get('author'),
       ask: this.get('ask') === undefined ? "undefined" : this.get('ask'),
+      timestamp: moment().format()
     };
     this.set('addNewQuestion', false);
     this.sendAction('save2', params);
