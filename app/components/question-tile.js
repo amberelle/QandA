@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  actions: {
-    destroyQuestion(question) {
-      if (confirm('Are you sure you want to delete this question?')) {
-        this.sendAction('destroyQuestion', question);
-      }
-    }
-  }
+
+  // questionDateCompute: Ember.computed(function() {
+  //   return moment(this.get('question.timestamp')).format("MMMM Do, h:mm a") + ': '+ this.get('question.ask');
+  // }),
+  authorDateCompute: Ember.computed(function() {
+    return 'on' + moment(this.get('question.timestamp')).format("MMMM Do, h:mm a") + ', '+ this.get('question.author') + ' asked:';
+  }),
 
 });
